@@ -168,7 +168,7 @@ void LevelOrder(BTNode *root)
     QueueInit(&q); // 初始化队列
 
     if (root)
-        QueuePush(&q, root); // 放入根节点启动循环
+    	QueuePush(&q, root); // 放入根节点启动循环
 
     while (!QueueEmpty(&q))
     {
@@ -245,7 +245,7 @@ void BTreeDestory(BTNode *root)
 }
 
 // ==========================================
-// 第二部分: 堆排序与 TopK 问题 (基于 Heap.h)
+// 第二部分: 堆排序与 TopK 问题
 // ==========================================
 
 // 【堆排序】Heap Sort
